@@ -1,0 +1,100 @@
+/* Header Container */
+.header-container {
+  background: linear-gradient(135deg, #1f1f1f, #333);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed; /* Posisi tetap */
+  top: 0;          /* Menempel di atas */
+  left: 0;
+  width: 100%;     /* Lebar penuh */
+  background: rgba(31, 31, 31, 0.9); /* Transparansi untuk efek modern */
+  padding: 1rem 0;
+  z-index: 1000;   /* Agar selalu di atas konten lain */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk kesan terangkat */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* Sentralisasi link */
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0a500; /* Warna oranye maskulin */
+}
+
+
+/* Header Content */
+.header-content {
+  margin-top: 3rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #bbb;
+  margin: 0.5rem 0 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #f0a500;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #fff;
+  color: #f0a500;
+  cursor: pointer;
+}
+
+/* Optional Animation */
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #f0a50010, transparent);
+  animation: rotate 20s infinite linear;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
