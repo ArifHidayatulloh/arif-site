@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Experience />
       <Contact />
       <Footer />
     </div>

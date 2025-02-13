@@ -4,7 +4,7 @@ html {
 }
 
 .contact-section {
-  background: #1f1f1f;  
+  background: linear-gradient(135deg, #282828, #1f1f1f);
   color: #fff;
   padding: 4rem 1rem;
   text-align: center;
